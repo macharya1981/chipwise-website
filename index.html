@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChipWise - Your Career in Semiconductors</title>
+    <!-- Use Tailwind CSS for modern, responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            @apply bg-gray-50 text-gray-800;
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="bg-indigo-900 text-white p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo with SVG and text -->
+            <a href="#" class="flex items-center space-x-2 text-2xl font-bold tracking-wide">
+                <!-- SVG Logo for ChipWise -->
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-white">
+                    <polygon points="12 2 22 8 22 16 12 22 2 16 2 8" stroke="currentColor" stroke-width="2" fill="none" />
+                    <path d="M7 8L12 11M12 11L17 8M12 11V16M7 16L12 13M12 13L17 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>ChipWise</span>
+            </a>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="hover:text-indigo-200 transition-colors duration-300">Home</a></li>
+                    <li><a href="#problem-solution" class="hover:text-indigo-200 transition-colors duration-300">Our Value</a></li>
+                    <li><a href="#services" class="hover:text-indigo-200 transition-colors duration-300">Services</a></li>
+                    <li><a href="#our-team" class="hover:text-indigo-200 transition-colors duration-300">Our Team</a></li>
+                    <li><a href="#webinar" class="hover:text-indigo-200 transition-colors duration-300">Webinar</a></li>
+                    <li><a href="#contact" class="hover:text-indigo-200 transition-colors duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gray-100 py-24 md:py-32 flex items-center justify-center text-center">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-indigo-900 mb-4 leading-tight">
+                Ignite Your Career in the <br class="hidden sm:inline">Semiconductor Industry
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-8">
+                ChipWise offers specialized training and career guidance to empower the next generation of semiconductor professionals.
+            </p>
+            <a href="#services" class="bg-indigo-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-700 transition-colors duration-300">
+                Explore Our Programs
+            </a>
+        </div>
+    </section>
+
+    <!-- Problem & Solution Section - Reworked -->
+    <section id="problem-solution" class="py-20 md:py-24 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-indigo-900 mb-4">Bridging the Gap: Your Path to a Semiconductor Career</h2>
+            <div class="mt-12 text-left max-w-4xl mx-auto">
+                <p class="text-lg text-gray-700">
+                    The semiconductor industry has a critical skill gap. ChipWise closes this gap by providing targeted, industry-vetted training and career support, giving you the essential skills and connections to succeed in the job market.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 md:py-24">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-indigo-900 mb-4">Our Services</h2>
+            <p class="text-gray-600 max-w-3xl mx-auto mb-12">
+                From foundational training to career placement, we provide everything you need to succeed in the fast-growing semiconductor industry.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg border-t-4 border-indigo-500 hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-indigo-600 mb-4">
+                        <svg class="h-12 w-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.405 9.176 5 7.5 5A4.5 4.5 0 003 9.5a4.5 4.5 0 004.5 4.5c1.761 0 3.32-0.405 4.5-1.147M12 6.253C13.168 5.405 14.824 5 16.5 5A4.5 4.5 0 0121 9.5a4.5 4.5 0 01-4.5 4.5c-1.761 0-3.32-0.405-4.5-1.147M12 6.253v13"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-indigo-900 mb-2">Certificate in Semiconductor Technology</h3>
+                    <p class="text-gray-600">
+                        Our flagship 200-hour program for engineering graduates and professionals. Covers industry basics, process deep-dives, and data analytics. <strong>All courses are taught by top PhD industry veterans from Intel and other top semiconductor companies.</strong>
+                    </p>
+                </div>
+                
+                <!-- Service Card 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg border-t-4 border-indigo-500 hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-indigo-600 mb-4">
+                        <svg class="h-12 w-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0a2 2 0 002 2h2a2 2 0 002-2m-6 0v-6a2 2 0 012-2h2a2 2 0 012 2v6m2-6a2 2 0 00-2-2H9a2 2 0 00-2 2m7 0a2 2 0 01-2 2H9a2 2 0 01-2-2m7 0v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6m-3 0h3"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-indigo-900 mb-2">Career & Placement Support</h3>
+                    <p class="text-gray-600">
+                        We offer resume assistance, industry mentorship, and recruiting connections to help you land your dream job in India and Asia.
+                    </p>
+                </div>
+                
+                <!-- Service Card 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg border-t-4 border-indigo-500 hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-indigo-600 mb-4">
+                        <svg class="h-12 w-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-indigo-900 mb-2">Short-Term Workshops</h3>
+                    <p class="text-gray-600">
+                        Quick, focused workshops (2-5 days) on specific topics to provide an introduction to semiconductors or deep-dive into new areas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Team Section -->
+    <section id="our-team" class="py-20 md:py-24 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-indigo-900 mb-4">Meet Our Expert Team</h2>
+            <p class="text-lg text-gray-600 max-w-4xl mx-auto mb-8">
+                Our instructors are not just teachers—they are seasoned industry veterans with decades of hands-on experience at top companies like <strong>Intel</strong> and <strong>Samsung</strong>. Every one of our instructors holds a <strong>PhD degree</strong> from a top US university in a semiconductor-related field, ensuring you learn from the best minds in the industry.
+            </p>
+        </div>
+    </section>
+
+    <!-- Webinar Section -->
+    <section id="webinar" class="py-20 md:py-24 bg-indigo-900 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                Join Our Free Webinar
+            </h2>
+            <p class="text-indigo-200 max-w-2xl mx-auto mb-8 text-xl">
+                <strong>September 05th</strong>: "A Career in Semiconductors: The Path to Success"
+            </p>
+            <p class="text-indigo-200 max-w-2xl mx-auto mb-12">
+                Learn about the industry landscape, key skills needed, and how ChipWise can help you start your career.
+            </p>
+            <!-- Formspree endpoint is set to send submissions to your email -->
+            <form id="webinar-form" action="https://formspree.io/f/manoranjan.ac@gmail.com" method="POST" class="max-w-xl mx-auto bg-white text-gray-800 p-8 rounded-lg shadow-md">
+                <h3 class="text-2xl font-bold mb-6">Register Now</h3>
+                <input type="text" name="name" placeholder="Your Name" class="w-full p-3 mb-4 rounded-md border border-gray-300 focus:outline-none focus:border-indigo-500" required>
+                <input type="email" name="email" placeholder="Your Email" class="w-full p-3 mb-4 rounded-md border border-gray-300 focus:outline-none focus:border-indigo-500" required>
+                <button type="submit" class="w-full bg-indigo-600 text-white font-bold py-3 rounded-md hover:bg-indigo-700 transition-colors duration-300">
+                    Register for Webinar
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 md:py-24">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-indigo-900 mb-12">Contact Us</h2>
+            <form id="contact-form" class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-md">
+                <input type="text" placeholder="Your Name" class="w-full p-3 mb-4 rounded-md border border-gray-300 focus:outline-none focus:border-indigo-500 transition-colors duration-300" required>
+                <input type="email" placeholder="Your Email" class="w-full p-3 mb-4 rounded-md border border-gray-300 focus:outline-none focus:border-indigo-500 transition-colors duration-300" required>
+                <textarea placeholder="Your Message" rows="5" class="w-full p-3 mb-4 rounded-md border border-gray-300 focus:outline-none focus:border-indigo-500 transition-colors duration-300" required></textarea>
+                <button type="submit" class="w-full bg-indigo-600 text-white font-bold py-3 rounded-md hover:bg-indigo-700 transition-colors duration-300">
+                    Send Message
+                </button>
+                <div id="form-status" class="mt-4 font-semibold text-center"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 ChipWise. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Simple JavaScript for form submission feedback -->
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+            const formStatus = document.getElementById('form-status');
+            formStatus.textContent = 'Thank you for your message! We will get back to you soon.';
+            formStatus.classList.add('text-green-500'); // Add a success color
+            
+            // Reset the form and status message after a few seconds
+            setTimeout(() => {
+                event.target.reset();
+                formStatus.textContent = '';
+                formStatus.classList.remove('text-green-500');
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
