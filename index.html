@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChipWise - Your Career in Semiconductors</title>
-    <!-- Use Tailwind CSS for modern, responsive styling -->
+    <title>ChipWise | Semiconductor Career Training & Placement</title>
+    <meta name="description" content="Launch your career in the semiconductor industry with ChipWise. We offer specialized training programs, career guidance, and job placement support from industry veterans.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +23,7 @@
     <header class="bg-indigo-900 text-white p-4 sticky top-0 z-50">
         <div class="container mx-auto flex justify-between items-center">
             <!-- Logo with SVG and text -->
-            <a href="#" class="flex items-center space-x-2 text-2xl font-bold tracking-wide">
+            <a href="#home" class="flex items-center space-x-2 text-2xl font-bold tracking-wide">
                 <!-- SVG Logo for ChipWise -->
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-white">
                     <polygon points="12 2 22 8 22 16 12 22 2 16 2 8" stroke="currentColor" stroke-width="2" fill="none" />
@@ -43,6 +43,23 @@
             </nav>
         </div>
     </header>
+
+    <!-- New: Webinar Highlight Banner -->
+    <section class="bg-yellow-400 text-gray-900 py-4 shadow-lg">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+            <div class="flex-1">
+                <h2 class="text-xl md:text-2xl font-bold">
+                    Join Our Free Webinar on Sept. 5th, 2025!
+                </h2>
+                <p class="text-sm md:text-base mt-1">
+                    Learn how to launch your career in the semiconductor industry with our experts.
+                </p>
+            </div>
+            <a href="#webinar" class="bg-indigo-600 text-white font-bold py-2 px-6 rounded-full shadow-md hover:bg-indigo-700 transition-colors duration-300 w-full md:w-auto">
+                Register Now
+            </a>
+        </div>
+    </section>
 
     <!-- Hero Section -->
     <section id="home" class="bg-gray-100 py-24 md:py-32 flex items-center justify-center text-center">
@@ -122,6 +139,11 @@
             <p class="text-lg text-gray-600 max-w-4xl mx-auto mb-8">
                 Our instructors are not just teachers—they are seasoned industry veterans with decades of hands-on experience at top companies like <strong>Intel</strong> and <strong>Samsung</strong>. Every one of our instructors holds a <strong>PhD degree</strong> from a top US university in a semiconductor-related field, ensuring you learn from the best minds in the industry.
             </p>
+            
+            <!-- Company Logos Section -->
+            <div class="flex flex-wrap items-center justify-center gap-6 mt-8">
+                <p class="text-lg font-semibold text-gray-600">Proudly taught by veterans from:</p>
+            </div>
         </div>
     </section>
 
@@ -132,7 +154,7 @@
                 Join Our Free Webinar
             </h2>
             <p class="text-indigo-200 max-w-2xl mx-auto mb-8 text-xl">
-                <strong>September 05th</strong>: "A Career in Semiconductors: The Path to Success"
+                <strong>Sept. 5th, 2025</strong>: "A Career in Semiconductors: The Path to Success"
             </p>
             <p class="text-indigo-200 max-w-2xl mx-auto mb-12">
                 Learn about the industry landscape, key skills needed, and how ChipWise can help you start your career.
@@ -142,6 +164,7 @@
                 <h3 class="text-2xl font-bold mb-6">Register Now</h3>
                 <input type="text" name="name" placeholder="Your Name" class="w-full p-3 mb-4 rounded-md border border-gray-300 focus:outline-none focus:border-indigo-500" required>
                 <input type="email" name="email" placeholder="Your Email" class="w-full p-3 mb-4 rounded-md border border-gray-300 focus:outline-none focus:border-indigo-500" required>
+                <textarea name="background_and_interest" placeholder="Tell us about your background and interests" rows="5" class="w-full p-3 mb-4 rounded-md border border-gray-300 focus:outline-none focus:border-indigo-500 transition-colors duration-300"></textarea>
                 <button type="submit" class="w-full bg-indigo-600 text-white font-bold py-3 rounded-md hover:bg-indigo-700 transition-colors duration-300">
                     Register for Webinar
                 </button>
@@ -153,10 +176,10 @@
     <section id="contact" class="py-20 md:py-24">
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-3xl md:text-4xl font-bold text-indigo-900 mb-12">Contact Us</h2>
-            <form id="contact-form" class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-md">
-                <input type="text" placeholder="Your Name" class="w-full p-3 mb-4 rounded-md border border-gray-300 focus:outline-none focus:border-indigo-500 transition-colors duration-300" required>
-                <input type="email" placeholder="Your Email" class="w-full p-3 mb-4 rounded-md border border-gray-300 focus:outline-none focus:border-indigo-500 transition-colors duration-300" required>
-                <textarea placeholder="Your Message" rows="5" class="w-full p-3 mb-4 rounded-md border border-gray-300 focus:outline-none focus:border-indigo-500 transition-colors duration-300" required></textarea>
+            <form id="contact-form" action="https://formspree.io/f/your-contact-form-id" method="POST" class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-md">
+                <input type="text" name="name" placeholder="Your Name" class="w-full p-3 mb-4 rounded-md border border-gray-300 focus:outline-none focus:border-indigo-500 transition-colors duration-300" required>
+                <input type="email" name="email" placeholder="Your Email" class="w-full p-3 mb-4 rounded-md border border-gray-300 focus:outline-none focus:border-indigo-500 transition-colors duration-300" required>
+                <textarea name="message" placeholder="Your Message" rows="5" class="w-full p-3 mb-4 rounded-md border border-gray-300 focus:outline-none focus:border-indigo-500 transition-colors duration-300" required></textarea>
                 <button type="submit" class="w-full bg-indigo-600 text-white font-bold py-3 rounded-md hover:bg-indigo-700 transition-colors duration-300">
                     Send Message
                 </button>
@@ -175,12 +198,11 @@
     <!-- Simple JavaScript for form submission feedback -->
     <script>
         document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent default form submission
+            event.preventDefault(); 
             const formStatus = document.getElementById('form-status');
             formStatus.textContent = 'Thank you for your message! We will get back to you soon.';
-            formStatus.classList.add('text-green-500'); // Add a success color
+            formStatus.classList.add('text-green-500'); 
             
-            // Reset the form and status message after a few seconds
             setTimeout(() => {
                 event.target.reset();
                 formStatus.textContent = '';
