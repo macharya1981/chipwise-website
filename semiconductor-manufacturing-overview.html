@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Semiconductor Manufacturing Process: An Overview | ChipWise</title>
+    <meta name="description" content="A detailed overview of the semiconductor manufacturing process, from raw silicon to finished integrated circuits.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            @apply bg-gray-50 text-gray-800;
+            scroll-behavior: smooth;
+        }
+        .container {
+            max-width: 800px;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="bg-indigo-900 text-white p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- This link now correctly points back to the main website's home page -->
+            <a href="chipwise-main#home" class="flex items-center space-x-2 text-2xl font-bold tracking-wide">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-white">
+                    <polygon points="12 2 22 8 22 16 12 22 2 16 2 8" stroke="currentColor" stroke-width="2" fill="none" />
+                    <path d="M7 8L12 11M12 11L17 8M12 11V16M7 16L12 13M12 13L17 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>ChipWise</span>
+            </a>
+            <nav>
+                <!-- This link now correctly points back to the articles section on the main website -->
+                <a href="chipwise-main#articles" class="hover:text-indigo-200 transition-colors duration-300">Back to Articles</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Article Content -->
+    <main class="py-12 md:py-16">
+        <div class="container mx-auto px-4">
+            <article class="bg-white p-8 rounded-lg shadow-lg">
+                <h1 class="text-4xl font-extrabold text-indigo-900 mb-4">The Semiconductor Manufacturing Process: An Overview</h1>
+                <p class="text-sm text-gray-600 mb-8">Published: Aug 14, 2025</p>
+
+                <p class="mb-6 text-lg">
+                    The journey of a semiconductor from a raw material to the "brain" of a modern electronic device is a marvel of engineering. At ChipWise, we believe understanding this journey is a fundamental step for anyone aspiring to work in the industry. This article provides a high-level overview of the major steps involved in semiconductor manufacturing.
+                </p>
+
+                <h2 class="text-2xl font-bold text-indigo-800 mt-8 mb-4">From Sand to Silicon Wafer</h2>
+                <p class="mb-6">
+                    It all begins with one of the most abundant elements on Earth: silicon, which is derived from sand. The silicon is purified to an ultra-high degree (99.9999999% purity) and then melted and cooled to form a large, cylindrical crystal called an ingot. This ingot is then sliced into thin, circular discs known as **silicon wafers**. These wafers are the foundation upon which every integrated circuit (IC) is built.
+                </p>
+
+                <h2 class="text-2xl font-bold text-indigo-800 mt-8 mb-4">The Fabrication Process (Frontend)</h2>
+                <p class="mb-6">
+                    The fabrication, or "fab," process is where the real magic happens. This is an incredibly complex series of steps that takes place in a highly controlled, sterile environment called a **cleanroom**. Key stages include:
+                </p>
+                <ul class="list-disc list-inside space-y-2 mb-6">
+                    <li>
+                        <strong>Oxidation:</strong> A thin layer of silicon dioxide is grown on the wafer's surface, acting as an insulator.
+                    </li>
+                    <li>
+                        <strong>Photolithography:</strong> This is the process of using light to transfer a geometric pattern from a photomask onto the surface of the wafer. It's similar to taking a picture, but on a microscopic scale.
+                    </li>
+                    <li>
+                        <strong>Etching:</strong> Unwanted material is removed from the wafer, creating the precise patterns defined by the lithography step.
+                    </li>
+                    <li>
+                        <strong>Deposition:</strong> New material, such as conductive metals or insulators, is added to the wafer's surface.
+                    </li>
+                    <li>
+                        <strong>Ion Implantation:</strong> This process "dopes" the silicon with impurities to change its electrical properties, forming the transistors and other components of the circuit.
+                    </li>
+                </ul>
+
+                <h2 class="text-2xl font-bold text-indigo-800 mt-8 mb-4">Assembly, Test, and Packaging (Backend)</h2>
+                <p class="mb-6">
+                    After the frontend fabrication is complete, the wafers are sent to the backend. This is where individual chips are cut from the wafer, tested for defects, and packaged into a form that can be used in electronic devices.
+                </p>
+                <ul class="list-disc list-inside space-y-2 mb-6">
+                    <li>
+                        <strong>Wafer Sort:</strong> Each chip (or "die") on the wafer is tested to ensure it functions correctly.
+                    </li>
+                    <li>
+                        <strong>Dicing:</strong> The wafer is cut into individual dies.
+                    </li>
+                    <li>
+                        <strong>Packaging:</strong> The functional dies are placed in a protective case with pins or solder balls that allow them to be connected to a circuit board.
+                    </li>
+                    <li>
+                        <strong>Final Test:</strong> The packaged chips undergo a final, rigorous test to ensure they meet all specifications.
+                    </li>
+                </ul>
+
+                <p class="mt-8 text-lg italic">
+                    This overview scratches the surface of this intricate process. At ChipWise, our training programs dive deep into each of these stages, providing you with the practical knowledge and skills needed to excel in a semiconductor manufacturing environment.
+                </p>
+            </article>
+            
+            <div class="mt-8 text-center">
+                <a href="chipwise-main#articles" class="bg-indigo-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-700 transition-colors duration-300">
+                    &larr; Back to Articles
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 ChipWise. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
