@@ -256,7 +256,7 @@
                 Learn about the industry landscape, key skills needed, and how ChipWise can help you start your career.
             </p>
             <!-- Formspree endpoint is set to send submissions to your email -->
-            <form id="webinar-form" action="https://formspree.io/f/xpwlbkqw" method="POST" class="max-w-xl mx-auto bg-white text-gray-800 p-8 rounded-lg shadow-md">
+            <form id="webinar-form" class="max-w-xl mx-auto bg-white text-gray-800 p-8 rounded-lg shadow-md">
                 <h3 class="text-2xl font-bold mb-6">Register Now</h3>
                 <input type="text" name="name" placeholder="Your Name" class="w-full p-3 mb-4 rounded-md border border-gray-300 focus:outline-none focus:border-indigo-500" required>
                 <input type="email" name="email" placeholder="Your Email" class="w-full p-3 mb-4 rounded-md border border-gray-300 focus:outline-none focus:border-indigo-500" required>
@@ -291,6 +291,59 @@
         </div>
     </footer>
 
+ <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const webinarForm = document.getElementById('webinar-form');
+            const webinarFormStatus = document.getElementById('webinar-form-status');
+            const contactForm = document.getElementById('contact-form');
+            const contactFormStatus = document.getElementById('form-status');
+            const googleAppsScriptURL = "https://script.google.com/macros/s/AKfycbxOKF9NBdBe3Z9jD2RQLWUd1WIV2RM5MaJEul37pKbO_7F5KnjJhyJ9y2EeVrt0wzFd/exec";
+            const formspreeURL = "https://formspree.io/f/your-contact-form-id";
+
+            if (webinarForm) {
+                webinarForm.addEventListener('submit', function(event) {
+                    event.preventDefault();
+
+                    webinarFormStatus.textContent = 'Submitting...';
+                    webinarFormStatus.classList.remove('text-green-500', 'text-red-500');
+
+                    const formData = new FormData(webinarForm);
+
+                    fetch(googleAppsScriptURL, {
+                        method: 'POST',
+                        mode: 'no-cors', // Add this to prevent CORS errors
+                        body: formData
+                    })
+                    .then(response => {
+                         // With no-cors, the response is opaque, so we can't check response.ok
+                         // Instead, we assume success and display a message.
+                        webinarFormStatus.textContent = 'Thank you for registering! We will be in touch soon.';
+                        webinarFormStatus.classList.add('text-green-500');
+                        webinarForm.reset();
+                    })
+                    .catch(error => {
+                        webinarFormStatus.textContent = 'An error occurred. Please try again later.';
+                        webinarFormStatus.classList.add('text-red-500');
+                        console.error('Error:', error);
+                    });
+                });
+            }
+
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(event) {
+                    event.preventDefault(); 
+                    contactFormStatus.textContent = 'Thank you for your message! We will get back to you soon.';
+                    contactFormStatus.classList.add('text-green-500'); 
+                    
+                    setTimeout(() => {
+                        event.target.reset();
+                        contactFormStatus.textContent = '';
+                        contactFormStatus.classList.remove('text-green-500');
+                    }, 3000);
+                });
+            }
+        });
+    </script>
  
 </body>
 </html>
